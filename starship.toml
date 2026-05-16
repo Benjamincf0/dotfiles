@@ -95,7 +95,7 @@ symbol = ' '
 symbol = '󰏗 '
 
 [aws]
-symbol = ' '
+symbol = ' '
 style = 'yellow'
 format = '[$symbol($profile )(\[$duration\] )]($style)'
 
