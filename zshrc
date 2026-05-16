@@ -1,5 +1,5 @@
 # Homebrew
-BREW_PREFIX=$(brew --prefix)
+BREW_PREFIX="/opt/homebrew"
 export PATH="$BREW_PREFIX/bin:$PATH"
 
 # alias
