@@ -12,10 +12,11 @@ alias lla="eza -la --group-directories-first -F --icons -h --git"
 
 alias v="nvim"
 alias t="tmux"
+alias g="git"
 alias lg="lazygit"
 alias e="exit"
 
-alias g="git"
+alias ssh="kitty +kitten ssh"
 
 # Starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
