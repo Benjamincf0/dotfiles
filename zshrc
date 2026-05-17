@@ -93,3 +93,19 @@ export CMAKE_EXPORT_COMPILE_COMMANDS=1
 yoink() {
   osascript -e "set the clipboard to (POSIX file \"$PWD/$1\")"
 }
+
+# Prompt Engineering Starship
+PROMPT_NEEDS_NEWLINE=false
+
+# precmd is builtin to zsh. runs before prompt gets drawn
+precmd() { 
+  if [[ "$PROMPT_NEEDS_NEWLINE" == true ]]; then
+    echo
+  fi
+  PROMPT_NEEDS_NEWLINE=true
+}
+
+clear() {
+  PROMPT_NEEDS_NEWLINE=false
+  command clear # Needed to call actual clear cmd from $PATH and avoid infinite loop
+}
