@@ -14,6 +14,7 @@ alias v="nvim"
 alias t="tmux"
 alias g="git"
 alias lg="lazygit"
+alias br="taproom"
 alias e="exit"
 
 alias ssh="kitty +kitten ssh"
