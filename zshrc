@@ -6,11 +6,9 @@ export PATH="$BREW_PREFIX/bin:$PATH"
 
 # alias
 alias ..="cd .."
-alias l="eza -lagB --group-directories-first -F --icons -h --git"
-alias ls="eza --group-directories-first -F --icons"
-alias ll="eza -l --group-directories-first -F --icons -h --git"
-alias lt="eza --tree --git-ignore"
-alias lla="eza -la --group-directories-first -F --icons -h --git"
+alias ls="eza --group-directories-first -F --icons --color=always"
+alias ll="eza -lagB --group-directories-first -F --icons --git --color=always"
+alias lt="eza --tree --git-ignore --color=always"
 
 alias v="nvim"
 alias t="tmux"
